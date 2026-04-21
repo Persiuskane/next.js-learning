@@ -1,14 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { buttonVariants } from "../ui/button";
-import { LightTheme, ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "./theme-toggle";
 
 export default function NavBar() {
   return (
-    <nav
-      className="flex justify-between items-center w-full flex-col sm:flex-row"
-      p-2
-    >
+    <nav className="flex justify-between items-center w-full flex-col sm:flex-row">
       <div className="pl-2 pt-2 pb-2">
         <Link href="/">
           <Image
@@ -29,9 +26,9 @@ export default function NavBar() {
         </Link>
         <Link
           className={buttonVariants({ variant: "ghost" })}
-          href="/next-facts"
+          href="/challenges"
         >
-          Next Facts
+          Challenges
         </Link>
       </div>
       <div className="flex pt-2 pb-2 gap-2">
@@ -45,7 +42,6 @@ export default function NavBar() {
           Login
         </Link>
         <ThemeToggle />
-        <LightTheme />
       </div>
     </nav>
   );

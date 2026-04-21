@@ -37,9 +37,3 @@ export function ThemeToggle() {
     </DropdownMenu>
   );
 }
-
-export function LightTheme() {
-  const { setTheme } = useTheme();
-  console.log(setTheme("light"));
-  return <button onClick={() => setTheme("light")}>Light</button>;
-}

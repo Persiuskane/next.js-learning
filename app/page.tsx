@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <main>
         <h1>Main Page</h1>
-        <ThemeToggle />
       </main>
     </div>
   );
