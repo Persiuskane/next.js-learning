@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/components/web/theme-toggle";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <main>
         <h1>Main Page</h1>
+        <ThemeToggle />
       </main>
     </div>
   );
